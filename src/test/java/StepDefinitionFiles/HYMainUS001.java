@@ -1,9 +1,11 @@
 package StepDefinitionFiles;
 
 import NauWebProject.Base;
+import NauWebProject.Driver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Assert;
 
 public class HYMainUS001 extends Base {
 
@@ -14,7 +16,6 @@ public class HYMainUS001 extends Base {
 
     @When("^User hover on \"([^\"]*)\" button$")
     public void user_hover_on_button(String arg1) throws Throwable {
-
 
     }
 
@@ -35,5 +36,7 @@ public class HYMainUS001 extends Base {
 
     @Then("^User should navigate to page \"([^\"]*)\"$")
     public void user_should_navigate_to_page(String arg1) throws Throwable {
+        seleniumUtil.goToPage(arg1);
+        Assert.assertEquals(Driver.getProp(arg1),seleniumUtil.getUrl());
     }
 }
