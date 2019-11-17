@@ -17,7 +17,7 @@ public class SeleniumUtil {
     }
 
     public WebElement findElement(By locator) {
-        return Driver.driver.findElement(locator);
+        return Driver.getDriver().findElement(locator);
     }
 
     public void click(By locator) {
