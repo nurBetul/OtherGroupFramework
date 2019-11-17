@@ -5,11 +5,12 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features="src\\test\\java\\FeatureFiles",
-        glue="StepDefinitionFiles.HYMain"
+        features="src\\test\\java\\NYFacultyFeature",
+        glue="StepDefinitionFiles.NYFaculty",
+        tags = {"@NY"}
 )
 
-public class RunnerClass {
+public class NYRunner {
 
 
 
