@@ -1,4 +1,4 @@
-package StepDefinitionFiles;
+package StepDefinitionFiles.HYMain;
 
 import NauWebProject.Base;
 import NauWebProject.Driver;
