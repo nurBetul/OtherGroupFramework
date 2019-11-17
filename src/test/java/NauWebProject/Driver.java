@@ -34,9 +34,9 @@ public class Driver {
         }
     }
 
-    public static String prop(String url) throws IOException {
+    public static String getProp(String url) throws IOException {
         prop = new Properties();
-        FileInputStream fis=new FileInputStream("/Users/hakkiyaz/Desktop/Project/NAWebAppProject/src/test/java/NauWebProject/global.properties");
+        FileInputStream fis=new FileInputStream("C:\\Users\\nurbe\\Desktop\\Project\\NAWebAppProject\\src\\test\\java\\NauWebProject\\global.properties");
         prop.load(fis);
         return prop.getProperty(url);
     }
